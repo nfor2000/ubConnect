@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <link rel="stylesheet" href="./assets/css/bootstrap.css">
+     <link rel="stylesheet" href="./premium/assets/css/class.css">
+     <!-- bootstrap core css -->
+     <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.css" />
+
+     <!-- fonts style -->
+     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+     <!--owl slider stylesheet -->
+     <link rel="stylesheet" type="text/css"
+          href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+     <!-- font awesome style -->
+     <link href="./assets/css/font-awesome.min.css" rel="stylesheet" />
+     <link rel="shortcut icon" href="./assets/images/favicon.png" type="">
+
+     <!-- Custom styles for this template -->
+     <link href="./assets/css/style.css" rel="stylesheet" />
+     <!-- responsive style -->
+     <link href="./assets/css/responsive.css" rel="stylesheet" />
+     <link rel="stylesheet" href="./assets/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+
+     <link rel="stylesheet" href="./assets/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+     <link rel="stylesheet" href="./assets/css/class.css">
+</head>
+
+<body>
+
+     <div class="hero_area">
+
+          <div class="hero_bg_box">
+               <div class="bg_img_box">
+                    <img src="./assets/images/hero-bg.png" alt="">
+               </div>
+          </div>
+
+          <!-- header section strats -->
+          <header class="header_section">
+               <div class="container-fluid">
+                    <nav class="navbar navbar-expand-lg custom_nav-container ">
+                         <a class="navbar-brand" href="index.html">
+                              <span>
+                                   UB_CONNECT
+                              </span>
+                         </a>
+
+                         <button class="navbar-toggler" type="button" data-toggle="collapse"
+                              data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                              aria-expanded="false" aria-label="Toggle navigation">
+                              <span class=""> </span>
+                         </button>
+
+                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                              <ul class="navbar-nav  logged-out-nav d-none">
+                                   <li class="nav-item active">
+                                        <a class="nav-link" href="index.html">Home <span
+                                                  class="sr-only">(current)</span></a>
+                                   </li>
+                                   <li class="nav-item">
+                                        <a class="nav-link" href="about.html"> About</a>
+                                   </li>
+                                   <li class="nav-item">
+                                        <a class="nav-link" href="service.html">Services</a>
+                                   </li>
+                                   <li class="nav-item">
+                                        <a class="nav-link" href="./register.html">Register</a>
+                                   </li>
+                                   <li class="nav-item">
+                                        <a class="nav-link" href="./login.html"> <i class="fa fa-user"
+                                                  aria-hidden="true"></i> Login</a>
+                                   </li>
+                                   <form class="form-inline">
+                                        <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
+                                             <i class="fa fa-search" aria-hidden="true"></i>
+                                        </button>
+                                   </form>
+                              </ul>
+                              <ul class="navbar-nav  logged-in-nav d-none">
+                                   <li class="nav-item active">
+                                        <a class="nav-link" href="index.html">Home <span
+                                                  class="sr-only">(current)</span></a>
+                                   </li>
+                                   <li class="nav-item">
+                                        <a class="nav-link" href="about.html"> About</a>
+                                   </li>
+                                   <li class="nav-item">
+                                        <a class="nav-link" href="service.html">Services</a>
+                                   </li>
+
+                                   <li class="nav-item hide">
+                                        <a class="nav-link" href="./listing.html">Listing</a>
+                                   </li>
+                                   <li class="nav-item">
+                                        <a href="./php/logout.php" class="nav-link" type="submit">
+                                             <i class="fa fa-sign-out" aria-hidden="true"></i>Logout
+                                        </a>
+                                   </li>
+
+                                   <form class="form-inline">
+                                        <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
+                                             <i class="fa fa-search" aria-hidden="true"></i>
+                                        </button>
+                                   </form>
+                              </ul>
+                         </div>
+                    </nav>
+               </div>
+          </header>
+
+
+
+          <main class="p-4">
+
+               <input type="text" id="search" onkeyup="findClass(this.value)" placeholder="search"
+                    class="form-control mb-2" style="max-width: 340px;">
+               <label for="select" class="text-white">filter</label>
+               <select name="filter" class="form-control mb-2" style="max-width: 340px;" id="select">
+                    <option value="all">All classes</option>
+                    <option value="free"> Free</option>
+                    <option value="occupied">Occupied</option>
+               </select>
+               <div class="reponse">
+                    <table class="table  table-condense table-striped table-hover unstyled"
+                         style="background-color: white; border-radius: 25px;">
+                         <thead>
+                              <th>Venues</th>
+                              <th>State</th>
+                              <th>Action</th>
+                         </thead>
+                         <tbody id="response">
+                         </tbody>
+               </div>
+          </main>
+
+          <script src="./assets/js/listing.js"></script>
+          <script src="./assets/js/verifySession.js"></script>
+</body>
+
+</html>
